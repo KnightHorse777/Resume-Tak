@@ -1,0 +1,180 @@
+body {
+    color: white;
+    background-color: rgb(69, 61, 61);
+    font-family: Poppins , sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+}
+
+.border {
+    border-width: 3px;
+    border-color: rgb(173, 15, 136);
+    border-style: double;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 500px;
+}
+
+.bv {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .bv {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .bv {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container h2 {
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.price-row {
+    width: 600px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    display: flexbox;
+    font-family: Poppins, sans-serif;
+}
+
+.price-col {
+    font-family: Poppins, sans-serif;
+    display: flexbox;
+    background-color: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price-col p {
+    font-size: 22px;
+}
+
+.price-col h3 {
+    font-size: 44px;
+    margin: 20px 40px;
+    font-weight: 500;
+}
+
+.price-col h3 span {
+    font-size: 16px;
+}
+.price-col ul {
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+.price-col ul li {
+    margin: 15px 0;
+}
+
+.price-col ul li::before {
+    content: "\2022";
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button{
+    width: 100%;
+    padding: 14px 0 ;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Baloo Thambi' , cursive;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.price-col button:hover{
+    background: #e33058;
+}
+
+.container2 > span{
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%,100%{
+        color: #fff;
+        text-shadow: 0 0 12px lime, 0 0 50px lime,  0 0 100px lime;
+    }
+    10%,90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.container2 > span:nth-child(1){
+    animation-delay: 0.25s;
+}
+
+.container2 > span:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+.container2 > span:nth-child(3){
+    animation-delay: 0.75s;
+}
+
+.container2 > span:nth-child(4){
+    animation-delay: 1s;
+}
+
+.container2 > span:nth-child(5){
+    animation-delay: 1.25s;
+}
+
+.container2 > span:nth-child(6){
+    animation-delay: 1.5s;
+}
+
+.container2 > span:nth-child(7){
+    animation-delay: 1.75s; 
+}
+
+.container2 > span:nth-child(8){
+    animation-delay: 2s;
+}
+
+.container2 > span:nth-child(9){
+    animation-delay: 2.25s;
+}
+
+.container2 > span:nth-child(10){
+    animation-delay: 2.5s;
+}
